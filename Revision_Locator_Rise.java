@@ -23,179 +23,179 @@ public class Revision_Locator_Rise {
         //Find Locator
 //1. Find locator in Title
         //Upload File & Upload Image button
-//        String input = "//input[@id='%s']";
-//        String xpathUploadFile = String.format(input,"profile_image_file");
-//        driver.findElement(By.xpath(xpathUploadFile)).click();
-//        System.out.println(xpathUploadFile);
-//        String xpathUploadImage = String.format(input,"profile_image_file_upload");
-//        driver.findElement(By.xpath(xpathUploadImage)).click();
-//        //Avatar & Name
-//        driver.findElement(By.xpath("//span[contains(@class,'avatar')]//following-sibling::img"));
-//        driver.findElement(By.xpath("//span[contains(@class,'avatar')]//following::h4"));
-//        // Find information: Admin, Email, Mobile
-//        String input1 = "//div[@class='box-content pl15']//following::p[position()=%s]";
-//        String xpathAdmin = String.format(input1,"1");
-//        System.out.println(xpathAdmin);
-//        driver.findElement(By.xpath(xpathAdmin));
-//        String xpathEmail = String.format(input1,"2");
-//        System.out.println(xpathEmail);
-//       driver.findElement(By.xpath(xpathEmail));
-// String xpathMobile = String.format(input1,"3");
-// String text = driver.findElement(By.xpath(xpathMobile)).getText();
-// System.out.println("In: " + text);
-//        Assert.assertEquals(text,"0923242935 duc123");
-//        System.out.println(xpathMobile);
-//        driver.findElement(By.xpath(xpathMobile)
-// //2. General Information
-//        driver.findElement(By.xpath("//a[text()=' General Info']")).click();
-//        //Find Locator of First Name, Last Name, Phone, Alternative phone, Skype, Date of birth,SSN
-//        String input2 = "//input[@placeholder='%s']";
-//        //First Name
-//        String xpathFirstName = String.format(input2,"First name");
-//        WebElement FirstName = driver.findElement(By.xpath(xpathFirstName));
-//        FirstName.click();
-//        FirstName.sendKeys(Keys.CONTROL,"a");
-//        FirstName.sendKeys("Tram");
-//        //Last Name
-//        String xpathLastName = String.format(input2,"Last name");
-//        WebElement LastName = driver.findElement(By.xpath(xpathLastName));
-//        LastName.click();
-//        LastName.sendKeys(Keys.CONTROL,"a");
-//        LastName.sendKeys("Phan");
-//        //Phone
-//        String xpathPhone = String.format(input2,"Phone");
-//        WebElement Phone = driver.findElement(By.xpath(xpathPhone));
-//        LastName.click();
-//        LastName.sendKeys(Keys.CONTROL,"a");
-//        LastName.sendKeys("0905900798");
-//        //Alternative phone
-//        String xpathAlternativePhone = String.format(input2,"Alternative phone");
-//        WebElement AlternativePhone = driver.findElement(By.xpath(xpathAlternativePhone));
-//        AlternativePhone.click();
-//        AlternativePhone.sendKeys(Keys.CONTROL,"a");
-//        AlternativePhone.sendKeys("0905668899");
-//        //Skype
-//        String xpathSkype = String.format(input2,"Skype");
-//        WebElement Skype = driver.findElement(By.xpath(xpathSkype));
-//        Skype.click();
-//        Skype.sendKeys(Keys.CONTROL,"a");
-//        Skype.sendKeys("+08367777");
-//        //Date of Birth
-//        String xpathDateofBirth = String.format(input2,"Date of birth");
-//        WebElement DateofBirth = driver.findElement(By.xpath(xpathDateofBirth));
-//        DateofBirth.click();
-//        DateofBirth.sendKeys(Keys.CONTROL,"a");
-//        DateofBirth.sendKeys("29-04-1996");
-//        //SSN
-//        String xpathSSN = String.format(input2,"SSN");
-//        WebElement SSN = driver.findElement(By.xpath(xpathSSN));
-//        SSN.click();
-//        SSN.sendKeys(Keys.CONTROL,"a");
-//        SSN.sendKeys("ABC");
-//        //Find Locator of Mailing Address and Alternative Address
-//        String input3 = "//textarea[@id='%s']";
-//        //Mailling address
-//        String xpathMailling = String.format(input3,"address");
-//        WebElement Mailling = driver.findElement(By.xpath(xpathMailling));
-//        Mailling.click();
-//        Mailling.sendKeys(Keys.CONTROL,"a");
-//        Mailling.sendKeys("qt@gmail.com");
-//        //Alternative address
-//        String xpathAlternative = String.format(input3,"alternative_address");
-//        WebElement Alternative = driver.findElement(By.xpath(xpathAlternative));
-//        Alternative.click();
-//        Alternative.sendKeys(Keys.CONTROL,"a");
-//        Alternative.sendKeys("qtpt@gmail.com");
-//        //Find locator Gender
-//        String input4 = "//input[@value='%s']";
-//        //Male
-//        String genderMale = String.format(input4,"male");
-//        driver.findElement(By.xpath(genderMale)).click();
-//        //Female
-//        String genderFemale = String.format(input4,"female");
-//        driver.findElement(By.xpath(genderFemale)).click();
-//        //Other
-//        String genderOther = String.format(input4,"other");
-//        driver.findElement(By.xpath(genderOther)).click();
-//        //Save button
-//        driver.findElement(By.xpath("//button[@type='submit']")).click();
-////3. Social Links
-//        //Facebook
-//        driver.findElement(By.xpath("//a[text()=' Social Links']")).click();
-//        String Links = "//input[@name='%s']";
-//        String xpathFacebook = String.format(Links,"facebook");
-//        WebElement Facebook = driver.findElement(By.xpath(xpathFacebook));
-//        Facebook.click();
-//        Facebook.sendKeys(Keys.CONTROL,"a");
-//        Facebook.sendKeys("fb.com/quynhtram");
-//        //Twitter
-//        String xpathTwitter = String.format(Links,"twitter");
-//        WebElement Twitter = driver.findElement(By.xpath(xpathTwitter));
-//        Twitter.click();
-//        Twitter.sendKeys(Keys.CONTROL,"a");
-//        Twitter.sendKeys("tw.com/quynhtram");
-//        //Linkedin
-//        String xpathLinkedin= String.format(Links,"linkedin");
-//        WebElement Linkedin = driver.findElement(By.xpath(xpathLinkedin));
-//        Linkedin.click();
-//        Linkedin.sendKeys(Keys.CONTROL,"a");
-//        Linkedin.sendKeys("lk.com/quynhtram");
-//        //WhatsApp
-//        String xpathWhatsApp = String.format(Links,"whatsapp");
-//        WebElement WhatsApp = driver.findElement(By.xpath(xpathWhatsApp));
-//        WhatsApp.click();
-//        WhatsApp.sendKeys(Keys.CONTROL,"a");
-//        WhatsApp.sendKeys("wa.me/quynhtram");
-//        //Digg
-//        String xpathDigg = String.format(Links,"digg");
-//        WebElement Digg = driver.findElement(By.xpath(xpathDigg));
-//        Digg.click();
-//        Digg.sendKeys(Keys.CONTROL,"a");
-//        Digg.sendKeys("digg.com/quynhtram");
-//        //Youtube
-//        String xpathYoutube = String.format(Links,"youtube");
-//        WebElement Youtube = driver.findElement(By.xpath(xpathYoutube));
-//        Youtube.click();
-//        Youtube.sendKeys(Keys.CONTROL,"a");
-//        Youtube.sendKeys("youtube.com/quynhtram");
-//        //Pinterest
-//        String xpathPinterest = String.format(Links,"pinterest");
-//        WebElement Pinterest = driver.findElement(By.xpath(xpathPinterest));
-//        Pinterest.click();
-//        Pinterest.sendKeys(Keys.CONTROL,"a");
-//        Pinterest.sendKeys("pinterest.com/quynhtram");
-//        //Instagram
-//        String xpathInstagram = String.format(Links,"instagram");
-//        WebElement Instagram = driver.findElement(By.xpath(xpathInstagram));
-//        Instagram.click();
-//        Instagram.sendKeys(Keys.CONTROL,"a");
-//        Instagram.sendKeys("instagram.com/quynhtram");
-//        //Github
-//        String xpathGithub = String.format(Links,"github");
-//        WebElement Github = driver.findElement(By.xpath(xpathGithub));
-//        Github.click();
-//        Github.sendKeys(Keys.CONTROL,"a");
-//        Instagram.sendKeys("github.com/quynhtram");
-//        //Tumblr
-//        String xpathTumblr = String.format(Links,"tumblr");
-//        WebElement Tumblr = driver.findElement(By.xpath(xpathTumblr));
-//        Tumblr.click();
-//        Tumblr.sendKeys(Keys.CONTROL,"a");
-//        Tumblr.sendKeys("tumblr.com/quynhtram");
-//        //Vine
-//        String xpathVine = String.format(Links,"vine");
-//        WebElement Vine = driver.findElement(By.xpath(xpathVine));
-//        Vine.click();
-//        Vine.sendKeys(Keys.CONTROL,"a");
-//        Vine.sendKeys("vine.co/quynhtram");
-//        //Save button
-//        driver.findElement(By.xpath("(//button[@type='submit'])[2]")).click();
+        String input = "//input[@id='%s']";
+        String xpathUploadFile = String.format(input,"profile_image_file");
+        driver.findElement(By.xpath(xpathUploadFile)).click();
+        System.out.println(xpathUploadFile);
+        String xpathUploadImage = String.format(input,"profile_image_file_upload");
+        driver.findElement(By.xpath(xpathUploadImage)).click();
+        //Avatar & Name
+        driver.findElement(By.xpath("//span[contains(@class,'avatar')]//following-sibling::img"));
+        driver.findElement(By.xpath("//span[contains(@class,'avatar')]//following::h4"));
+        // Find information: Admin, Email, Mobile
+        String input1 = "//div[@class='box-content pl15']//following::p[position()=%s]";
+        String xpathAdmin = String.format(input1,"1");
+        System.out.println(xpathAdmin);
+        driver.findElement(By.xpath(xpathAdmin));
+        String xpathEmail = String.format(input1,"2");
+        System.out.println(xpathEmail);
+       driver.findElement(By.xpath(xpathEmail));
+ String xpathMobile = String.format(input1,"3");
+ String text = driver.findElement(By.xpath(xpathMobile)).getText();
+ System.out.println("In: " + text);
+        Assert.assertEquals(text,"0923242935 duc123");
+        System.out.println(xpathMobile);
+        driver.findElement(By.xpath(xpathMobile));
+ //2. General Information
+        driver.findElement(By.xpath("//a[text()=' General Info']")).click();
+        //Find Locator of First Name, Last Name, Phone, Alternative phone, Skype, Date of birth,SSN
+        String input2 = "//input[@placeholder='%s']";
+        //First Name
+        String xpathFirstName = String.format(input2,"First name");
+        WebElement FirstName = driver.findElement(By.xpath(xpathFirstName));
+        FirstName.click();
+        FirstName.sendKeys(Keys.CONTROL,"a");
+        FirstName.sendKeys("Tram");
+        //Last Name
+        String xpathLastName = String.format(input2,"Last name");
+        WebElement LastName = driver.findElement(By.xpath(xpathLastName));
+        LastName.click();
+        LastName.sendKeys(Keys.CONTROL,"a");
+        LastName.sendKeys("Phan");
+        //Phone
+        String xpathPhone = String.format(input2,"Phone");
+        WebElement Phone = driver.findElement(By.xpath(xpathPhone));
+        LastName.click();
+        LastName.sendKeys(Keys.CONTROL,"a");
+        LastName.sendKeys("0905900798");
+        //Alternative phone
+        String xpathAlternativePhone = String.format(input2,"Alternative phone");
+        WebElement AlternativePhone = driver.findElement(By.xpath(xpathAlternativePhone));
+        AlternativePhone.click();
+        AlternativePhone.sendKeys(Keys.CONTROL,"a");
+        AlternativePhone.sendKeys("0905668899");
+        //Skype
+        String xpathSkype = String.format(input2,"Skype");
+        WebElement Skype = driver.findElement(By.xpath(xpathSkype));
+        Skype.click();
+        Skype.sendKeys(Keys.CONTROL,"a");
+        Skype.sendKeys("+08367777");
+        //Date of Birth
+        String xpathDateofBirth = String.format(input2,"Date of birth");
+        WebElement DateofBirth = driver.findElement(By.xpath(xpathDateofBirth));
+        DateofBirth.click();
+        DateofBirth.sendKeys(Keys.CONTROL,"a");
+        DateofBirth.sendKeys("29-04-1996");
+        //SSN
+        String xpathSSN = String.format(input2,"SSN");
+        WebElement SSN = driver.findElement(By.xpath(xpathSSN));
+        SSN.click();
+        SSN.sendKeys(Keys.CONTROL,"a");
+        SSN.sendKeys("ABC");
+        //Find Locator of Mailing Address and Alternative Address
+        String input3 = "//textarea[@id='%s']";
+        //Mailling address
+        String xpathMailling = String.format(input3,"address");
+        WebElement Mailling = driver.findElement(By.xpath(xpathMailling));
+        Mailling.click();
+        Mailling.sendKeys(Keys.CONTROL,"a");
+        Mailling.sendKeys("qt@gmail.com");
+        //Alternative address
+        String xpathAlternative = String.format(input3,"alternative_address");
+        WebElement Alternative = driver.findElement(By.xpath(xpathAlternative));
+        Alternative.click();
+        Alternative.sendKeys(Keys.CONTROL,"a");
+        Alternative.sendKeys("qtpt@gmail.com");
+        //Find locator Gender
+        String input4 = "//input[@value='%s']";
+        //Male
+        String genderMale = String.format(input4,"male");
+        driver.findElement(By.xpath(genderMale)).click();
+        //Female
+        String genderFemale = String.format(input4,"female");
+        driver.findElement(By.xpath(genderFemale)).click();
+        //Other
+        String genderOther = String.format(input4,"other");
+        driver.findElement(By.xpath(genderOther)).click();
+        //Save button
+        driver.findElement(By.xpath("//button[@type='submit']")).click();
+//3. Social Links
+        //Facebook
+        driver.findElement(By.xpath("//a[text()=' Social Links']")).click();
+        String Links = "//input[@name='%s']";
+        String xpathFacebook = String.format(Links,"facebook");
+        WebElement Facebook = driver.findElement(By.xpath(xpathFacebook));
+        Facebook.click();
+        Facebook.sendKeys(Keys.CONTROL,"a");
+        Facebook.sendKeys("fb.com/quynhtram");
+        //Twitter
+        String xpathTwitter = String.format(Links,"twitter");
+        WebElement Twitter = driver.findElement(By.xpath(xpathTwitter));
+        Twitter.click();
+        Twitter.sendKeys(Keys.CONTROL,"a");
+        Twitter.sendKeys("tw.com/quynhtram");
+        //Linkedin
+        String xpathLinkedin= String.format(Links,"linkedin");
+        WebElement Linkedin = driver.findElement(By.xpath(xpathLinkedin));
+        Linkedin.click();
+        Linkedin.sendKeys(Keys.CONTROL,"a");
+        Linkedin.sendKeys("lk.com/quynhtram");
+        //WhatsApp
+        String xpathWhatsApp = String.format(Links,"whatsapp");
+        WebElement WhatsApp = driver.findElement(By.xpath(xpathWhatsApp));
+        WhatsApp.click();
+        WhatsApp.sendKeys(Keys.CONTROL,"a");
+        WhatsApp.sendKeys("wa.me/quynhtram");
+        //Digg
+        String xpathDigg = String.format(Links,"digg");
+        WebElement Digg = driver.findElement(By.xpath(xpathDigg));
+        Digg.click();
+        Digg.sendKeys(Keys.CONTROL,"a");
+        Digg.sendKeys("digg.com/quynhtram");
+        //Youtube
+        String xpathYoutube = String.format(Links,"youtube");
+        WebElement Youtube = driver.findElement(By.xpath(xpathYoutube));
+        Youtube.click();
+        Youtube.sendKeys(Keys.CONTROL,"a");
+        Youtube.sendKeys("youtube.com/quynhtram");
+        //Pinterest
+        String xpathPinterest = String.format(Links,"pinterest");
+        WebElement Pinterest = driver.findElement(By.xpath(xpathPinterest));
+        Pinterest.click();
+        Pinterest.sendKeys(Keys.CONTROL,"a");
+        Pinterest.sendKeys("pinterest.com/quynhtram");
+        //Instagram
+        String xpathInstagram = String.format(Links,"instagram");
+        WebElement Instagram = driver.findElement(By.xpath(xpathInstagram));
+        Instagram.click();
+        Instagram.sendKeys(Keys.CONTROL,"a");
+        Instagram.sendKeys("instagram.com/quynhtram");
+        //Github
+        String xpathGithub = String.format(Links,"github");
+        WebElement Github = driver.findElement(By.xpath(xpathGithub));
+        Github.click();
+        Github.sendKeys(Keys.CONTROL,"a");
+        Instagram.sendKeys("github.com/quynhtram");
+        //Tumblr
+        String xpathTumblr = String.format(Links,"tumblr");
+        WebElement Tumblr = driver.findElement(By.xpath(xpathTumblr));
+        Tumblr.click();
+        Tumblr.sendKeys(Keys.CONTROL,"a");
+        Tumblr.sendKeys("tumblr.com/quynhtram");
+        //Vine
+        String xpathVine = String.format(Links,"vine");
+        WebElement Vine = driver.findElement(By.xpath(xpathVine));
+        Vine.click();
+        Vine.sendKeys(Keys.CONTROL,"a");
+        Vine.sendKeys("vine.co/quynhtram");
+        //Save button
+        driver.findElement(By.xpath("(//button[@type='submit'])[2]")).click();
 //4. Account settings
         driver.findElement(By.xpath("//a[text()=' Account settings']")).click();
         String Settings = "//input[@placeholder='%s']";
         //Email
-        String xpathEmail = String.format(Settings,"Email");
-        WebElement Email =  driver.findElement(By.xpath(xpathEmail));
+        String xpathEmailSetting = String.format(Settings,"Email");
+        WebElement Email =  driver.findElement(By.xpath(xpathEmailSetting));
         Email.click();
         Email.sendKeys(Keys.CONTROL,"a");
         Email.sendKeys("qt@gmail.com");
