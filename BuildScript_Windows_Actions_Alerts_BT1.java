@@ -18,6 +18,7 @@ public class BuildScript_Windows_Actions_Alerts_BT1 {
         driver.navigate().to("https://test.warface.codegym.vn");
         //2. Open a new tab and access to "https://test.warface.codegym.vn/login"
         driver.switchTo().newWindow(WindowType.TAB);
+        String newWindowHandle = driver.getWindowHandle();
         driver.get("https://test.warface.codegym.vn/login");
         //Login: input email and password
         String inputaccount = "//input[@placeholder='%s']";
@@ -29,15 +30,18 @@ public class BuildScript_Windows_Actions_Alerts_BT1 {
         driver.findElement(By.xpath("//button[text()= 'Đăng nhập']")).click();
         //5. Back to the page > Refresh > Close tab
         //Back to the first page
-        driver.navigate().back();
+        driver.switchTo().window(driver.getWindowHandles().iterator().next());
         //Refresh the page
         driver.navigate().refresh();
-        //Close the tab
+        //Close the login tab
+        driver.switchTo().window(newWindowHandle);
         driver.close();
         //6. Add 2 products
-        WebElement product1 = driver.findElement(By.xpath("//h6[text()='Iphone 6e9h0pfbbni']/following::a[text()='Mua hàng' and position()=2]"));
+        driver.switchTo().window(driver.getWindowHandles().iterator().next());
+        WebElement product1 = driver.findElement(By.xpath("//h6[text()='Ipad1']/following::a[text()='Mua hàng' and position()=2]"));
         product1.click();
-        driver.findElement(By.xpath("//h6[text()='Iphonexuiibszf4voayqcqalswq']/following::a[text()='Mua hàng' and position()=2]")).click();
+        WebElement product2 = driver.findElement(By.xpath("//h6[text()='Ipadgeneration12']/following::a[text()='Mua hàng' and position()=2]"));
+        product2.click();
         //7. Move to Cart and check
         driver.findElement(By.xpath("//span[text()=2]//parent::a[@href = 'https://test.warface.codegym.vn/cart']")).click();
         //Check product
@@ -50,8 +54,6 @@ public class BuildScript_Windows_Actions_Alerts_BT1 {
             System.out.println("Test failed");
 
         }
-
-
 
 
     }
